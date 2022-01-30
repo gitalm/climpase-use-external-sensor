@@ -15,10 +15,22 @@ Schließe den Sensor entsprechend an.
 
 ## Sensor programmieren
 
-Passe dazu den Sensortyp DHT11 / DHT22 an 
+Passe dazu den Sensortyp DHT11 / DHT22 an.
 ![Block hinzufügen](https://github.com/gitalm/-climpase----use-external-sensor/blob/master/2022-01-30_17-15.png?raw=true)
+
+```blocks
+basic.forever(function () {
+    dht11_dht22.queryData(
+    DHTtype.DHT22,
+    DigitalPin.P0,
+    true,
+    true,
+    true
+    )
+})
+```
 
 ## Konsole betrachen
 
-Lade das Progamm auf den micro:bit und betrachte die MEsswerte in der Konsole.
-![Konsole des micro:bit](https://github.com/gitalm/-climpase----use-external-sensor/blob/master/2022-01-30_17-17.png?raw=true)
+Lade das Progamm auf den micro:bit und betrachte die Messwerte in der Konsole.
+```![Konsole des micro:bit](https://github.com/gitalm/-climpase----use-external-sensor/blob/master/2022-01-30_17-17.png?raw=true)
