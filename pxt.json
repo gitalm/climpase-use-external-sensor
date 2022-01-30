@@ -11,7 +11,8 @@
         "main.blocks",
         "main.ts",
         "README.md",
-        "tutorial.md"
+        "tutorial.md",
+        "tutorial2.md"
     ],
     "testFiles": [
         "test.ts"
