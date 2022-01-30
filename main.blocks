@@ -1,1 +1,1 @@
-<xml xmlns="https://developers.google.com/blockly/xml"><block type="pxt-on-start" id="N.v8s+rWepnN~eN}.P`p" x="0" y="0"/><block type="device_forever" id="BUA)MsZArh#!+OE;jVm!" x="205" y="0"/></xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><comment id="MHY,vU[8R3_KWHKrq,*2" data="0" x="0" y="0" h="120" w="160">let</comment><block type="pxt-on-start" id="JIsd9x=:`Q!I.3r`N*-`" x="10" y="10"/></xml>
