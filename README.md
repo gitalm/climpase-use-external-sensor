@@ -29,5 +29,7 @@ Um dieses Repository in MakeCode zu bearbeiten.
 
 #### Metadaten (verwendet für Suche, Rendering)
 
+* Bibliothek für externe Sensoren von https://github.com/alankrantas/pxt-DHT11_DHT22
+
 * for PXT/microbit
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
