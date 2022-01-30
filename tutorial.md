@@ -2,6 +2,11 @@
 
 ## Step 1
 
+### Climapse - Climate 🌍🌡️ changing over Time  ⏳️
+
+Im folgenden Tutorial lernst Du mit dem micro:bit 
+1. den Sensor DHT11 / DHT22 anzuschließen
+2. die Sensordaten auszulesen und zu loggen
 
 ## Sensor anschließen
 
