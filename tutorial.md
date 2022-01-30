@@ -10,7 +10,7 @@ Im folgenden Tutorial lernst Du mit dem micro:bit
 
 ## Sensor anschließen
 
-Schließe den Sensor an den micro:bit an
+Schließe den Sensor an den micro:bit an (betrachte auch die Hilfe 💡)
 * linker Pin auf 3V
 * zweiter Pin von links auf P0
 * rechter Pin auf GND
@@ -19,12 +19,12 @@ Schließe den Sensor an den micro:bit an
 
 ## Sensor programmieren
 
-Passe dazu den Sensortyp DHT11 / DHT22 an.
+Passe dazu den Sensortyp DHT11 / DHT22 an (betrachte auch die Hilfe 💡).
 Füge den BLock DHT11 / DHT22 hinzu und passe den Sensor an.
  ![Block hinzufügen](https://github.com/gitalm/-climpase----use-external-sensor/blob/master/2022-01-30_17-15.png?raw=true)
 
 
 ## Konsole betrachen
 
-Lade das Progamm auf den micro:bit und betrachte die Messwerte in der Konsole.
+Lade das Progamm auf den micro:bit und betrachte die Messwerte in der Konsole (betrachte auch die Hilfe 💡).
  ![Konsole des micro:bit](https://github.com/gitalm/-climpase----use-external-sensor/blob/master/2022-01-30_17-17.png?raw=true)
