@@ -2,12 +2,12 @@
 
 * 🌡️>> 💻️ Im ersten Tutorial wird der Sensor DHT 11 / DHT 22 am Micro:bit ausgelesen und am PC geloggt.
     * 👀 Betrachte das gesamte [Tutorial](tutorial).
-    * ▶ Starte direkt dein [Tutorial](https://makecode.microbit.org/#tutorial:github:gitalm/climapse--read-temperature/tutorial) im Editor
+    * ▶ Starte direkt dein [Tutorial](https://makecode.microbit.org/#tutorial:github:gitalm/climpase-use-external-sensor/tutorial) im Editor
 * 🌡️>> 📡 >> 💻️Im zweiten und dritten Tutorial wird der Temperatursensor des Micro:bit ausgelesen, gesendet und empfangen und dann am PC geloggt.
     * 👀 Betrachte das gesamte [Tutorial Senden 📡>>](tutorial2).
-    * ▶ Starte direkt dein [Tutorial Senden 📡>>](https://makecode.microbit.org/#tutorial:github:gitalm/climapse--read-temperature/tutorial2) im Editor
+    * ▶ Starte direkt dein [Tutorial Senden 📡>>](https://makecode.microbit.org/#tutorial:github:gitalm/climpase-use-external-sensor/tutorial2) im Editor
     * 👀 Betrachte das gesamte [Tutorial Empfangen >>📡](tutorial3).
-    * ▶ Starte direkt dein [Tutorial Empfangen >>📡](https://makecode.microbit.org/#tutorial:github:gitalm/climapse--read-temperature/tutorial2) im Editor
+    * ▶ Starte direkt dein [Tutorial Empfangen >>📡](https://makecode.microbit.org/#tutorial:github:gitalm/climpase-use-external-sensor/tutorial3) im Editor
 
 ## Als Erweiterung verwenden
 
