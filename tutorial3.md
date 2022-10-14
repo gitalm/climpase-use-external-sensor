@@ -58,9 +58,10 @@ radio.onReceivedValue(function (name, value) {
 
 ## send data to PC 💻️
 
-Der serielle Ausgang schreibt die Werte an die **Konsole** des Editors. Der Block ``||serial:Schreibe Wertepaar||``  soll nun die Bezeichnnug
-des Wertes, bspw. *Temp in C* und die Variable ``||variable:Temp||`` und ein weiterer Block  ``||serial:Schreibe Wertepaar||`` 
-*Luftfeuchtigkeit* und den Wert ``||variable:Hum||`` an den PC schicken.
+The serial port writes the data directly to the **console** from your editor. The block ``||serial:Schreibe Wertepaar||``  
+will be named with the correct measured value, e.g.. *Temp in C* and the stored data in the variable ``||variable:Temp||`` . 
+After that you have to add another block  ``||serial:Schreibe Wertepaar||`` 
+*Humidity* and the sored value ``||variable:Hum||`` to n.send both to your PC.
 
 ```blocks
 basic.forever(function () {
@@ -70,12 +71,12 @@ basic.forever(function () {
 
 ```
 
-## Datei auf micro:bit laden
+## download programm to your micro:bit
 
-Lade nun die Software auf den zweiten micro:bit und dieser empfängt nun sogleich die Sensorwerte des ersten micro:bits.
+Download the software to your second micro:bit which acts as receiver and is forwarding the data to your PC.
 
 
-⚠️ Beide micro:bits müssen mit Spannung versorgt sein und in derselben Funkgruppe sein!
+⚠️ Both micro:bits need a power supply and the same radio group!
 
 ```blocks
 radio.onReceivedValue(function (name, value) {
@@ -96,9 +97,9 @@ basic.forever(function () {
 
 ```
 
-## Daten auf der Konsole betrachten
+## control data on your PC 📈
 
-Wenn du nun auf * **Konsole anzeigen** Gerät* klcikst, erscheinen die Messwerte des externen Sensors am frei beweglichen ersten micro:bit.
+If you activate the **show console** within your editor you see the data from your mobile first micro:bit sender. The data can be further proccessed within any calculation software.
 
 
  ![Block hinzufügen](https://github.com/gitalm/-climpase----use-external-sensor/blob/master/2022-01-30_19-26.png?raw=true)
