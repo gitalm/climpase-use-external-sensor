@@ -4,32 +4,31 @@
 
 ### Climapse - Climate 🌍🌡️ changing over Time  ⏳️
 
-Im folgenden Tutorial lernst Du
-1. Sensordaten von DHT11 / DHT22 zu messen
-2. Sensordaten zu senden
+In the following tutorial for the micro:bit you learn to receive sensor data from DHT11 / DHT22 
 
 ## micro:bit initialisieren
 
-Zum Start lassen wir einfach Geistsymbol 👻 ``||basic.showIcon||`` einblenden, damit wir wissen,
-ob der Microbit läuft. Füge den micro:bit auch einer ```||radio:setze Funkgruppe auf||```, beispielsweise **24** hinzu.
+To know about the status and to distinguish the two micro:bits (sender and receiver) we show a giraffe 🦒 ``||basic.showIcon||``. 
+Add your receiver micro:bit to your common radio group ```||radio:setze Funkgruppe auf||```, e.g. **24**. If there are more progammers 👩🏼‍💻👨🏾‍💻 in the room choose different radio groups. 
 
 ```blocks
 radio.setGroup(24)
-basic.showIcon(IconNames.Ghost)
+basic.showIcon(IconNames.Giraffe)
 ```
 
-## Variablen initialisieren
+## initialise the variables 
 
-Um die empfangenen Werte auszugeben, müssen diese in Variablen zwischengepeichert werden. Daher erstellen wir
-``||variable:Erstelle Variable ||``  **Tmp** für die Temperatur und ``||variable:Erstelle Variable||`` **Hum** für die Luftfeuchtigkeit. 
+To store the received data and send it to your PC, you have to create variables.
+``||variable:Erstelle Variable ||``  **Tmp** for temperature and ``||variable:Erstelle Variable||`` **Hum** the humidity. 
 
  ![Block hinzufügen](https://github.com/gitalm/-climpase----use-external-sensor/blob/master/2022-01-30_19-08.png?raw=true)
 
 
-## Werte auslesen I 
+## read the values I 
 
-Um die beiden gesendeten Werte auszulesen, muss man zuerst ``||radio:Wenn Wertepaar empfangen||`` einfügen. Nun muss man mit Hilfe der 
-Logikbausteinen ||logic:Wenn wahr dann ... ansonsten ||`` auswählen, ob man den Temperaturwert *Tmp* oder den Luftfeuchtigkeitswert *Hum* empfangen hat.
+To read the sended data you first have to add a block ``||radio:Wenn Wertepaar empfangen||``. 
+Now you have to use logic  ``||logic:Wenn wahr dann ... ansonsten ||`` to store the data in the correct variable, e.g. the temperature in *Tmp* or humidity *Hum*.
+Because there are only two options it is easy to just check for one variable.
 
 ```blocks
 radio.onReceivedValue(function (name, value) {
@@ -41,12 +40,11 @@ radio.onReceivedValue(function (name, value) {
 })
 ```
 
-## Werte auslesen II
+## read values II
 
-Nun muss in den Bedingung der Name verglichen werden, ob man die Temperatur ``||logic:Wenn "Tmp" == name||`` setze 
-den Werte der Variable ``||variable:Temp||`` auf den Wert **value**.
-Falls der Wert für die Luftfeuchtigkeit empfangen wurde, soll der dazugehörige Wert **value** in der Variablen ``||variable:Hum||`` gespeichert
-werden.
+The conditions checks the name of the variable  ``||logic:Wenn "Tmp" == name||`` and stores the received vaule in the correct variable 
+``||variable:Temp||`` by attributing  **value**.
+If the sensor didn't receive the value for the temperaure, you have to store the **value** in the variable ``||variable:Hum||``.
 
 ```blocks
 radio.onReceivedValue(function (name, value) {
@@ -58,7 +56,7 @@ radio.onReceivedValue(function (name, value) {
 })
 ```
 
-## Werte an PC senden 
+## send data to PC 💻️
 
 Der serielle Ausgang schreibt die Werte an die **Konsole** des Editors. Der Block ``||serial:Schreibe Wertepaar||``  soll nun die Bezeichnnug
 des Wertes, bspw. *Temp in C* und die Variable ``||variable:Temp||`` und ein weiterer Block  ``||serial:Schreibe Wertepaar||`` 
